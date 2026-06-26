@@ -265,7 +265,7 @@ Cone,D2,D3,D2,D3
 
 <script>
 "use strict";
-const DATA = {"electrons": {"modality": "Electrons", "depths": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0], "series": [{"id": "6E_A6", "group": "6E", "cone": "A6", "label": "6E \u00b7 A6", "values": [75.9, 77.6, 79.8, 82.1, 84.4, 86.9, 89.3, 91.7, 93.9, 96.0, 97.7, 99.0, 100.0, 99.9, 99.0, 97.3, 94.8, 91.3, 86.9, 81.4, 75.1, 68.1, 60.6, 52.8, 44.8, 36.9, 29.5, 22.7, 16.7, 11.6, 7.7, 5.0, 3.1, 1.9, 1.2, 0.8, 0.8, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.6, 0.6, 0.7, 0.6, 0.7, 0.6, 0.6, 0.7, 0.6, 0.7, 0.6, 0.6, 0.6, 0.6, 0.6, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "6E_A10", "group": "6E", "cone": "A10", "label": "6E \u00b7 A10", "values": [76.8, 78.6, 80.9, 83.4, 85.8, 88.3, 90.8, 93.0, 95.2, 97.1, 98.6, 99.8, 100.0, 99.6, 98.2, 96.1, 93.1, 89.2, 84.4, 78.7, 72.2, 65.2, 57.7, 49.9, 41.9, 34.4, 27.4, 20.8, 15.2, 10.7, 7.0, 4.5, 2.9, 1.8, 1.2, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.7, 0.8, 0.8, 0.8, 0.8, 0.7, 0.8, 0.8, 0.7, 0.7, 0.7, 0.8, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "6E_A15", "group": "6E", "cone": "A15", "label": "6E \u00b7 A15", "values": [76.8, 78.6, 80.9, 83.4, 85.8, 88.3, 90.8, 93.0, 95.2, 97.1, 98.6, 99.8, 100.0, 99.6, 98.2, 96.1, 93.1, 89.2, 84.4, 78.7, 72.2, 65.2, 57.7, 49.9, 41.9, 34.4, 27.4, 20.8, 15.2, 10.7, 7.0, 4.5, 2.9, 1.8, 1.2, 1.0, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.7, 0.8, 0.8, 0.8, 0.8, 0.7, 0.8, 0.8, 0.7, 0.7, 0.7, 0.8, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "6E_A20", "group": "6E", "cone": "A20", "label": "6E \u00b7 A20", "values": [77.6, 79.1, 81.2, 83.4, 85.6, 87.9, 90.0, 92.3, 94.5, 96.5, 98.1, 99.4, 100.0, 100.0, 99.1, 97.4, 94.9, 91.6, 87.1, 82.0, 75.8, 69.0, 61.8, 54.2, 46.3, 38.6, 31.0, 24.2, 18.1, 12.9, 8.8, 5.9, 3.7, 2.4, 1.6, 1.2, 0.9, 0.9, 0.9, 0.9, 0.8, 0.9, 0.9, 0.9, 0.9, 0.9, 0.8, 0.9, 0.8, 0.9, 0.9, 0.9, 0.9, 0.8, 0.9, 0.9, 0.9, 0.9, 0.8, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "9E_A6", "group": "9E", "cone": "A6", "label": "9E \u00b7 A6", "values": [79.1, 80.0, 81.4, 82.7, 83.9, 85.1, 86.4, 87.6, 88.6, 89.8, 91.0, 92.3, 93.3, 94.4, 95.6, 96.7, 97.7, 98.7, 99.2, 99.7, 99.9, 99.9, 99.4, 98.5, 97.1, 95.3, 93.0, 90.2, 87.0, 83.4, 78.7, 74.1, 68.9, 63.4, 57.5, 51.6, 45.3, 39.3, 33.4, 27.8, 22.4, 17.7, 13.7, 10.4, 7.5, 5.4, 3.9, 2.7, 2.1, 1.7, 1.4, 1.3, 1.3, 1.2, 1.1, 1.1, 1.2, 1.2, 1.1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "9E_A10", "group": "9E", "cone": "A10", "label": "9E \u00b7 A10", "values": [79.7, 80.9, 82.3, 83.6, 84.9, 86.1, 87.3, 88.3, 89.4, 90.6, 91.8, 92.9, 94.1, 95.3, 96.4, 97.3, 98.2, 99.0, 99.6, 99.9, 100.0, 99.7, 99.1, 98.0, 96.6, 94.5, 92.1, 89.1, 85.7, 82.0, 77.4, 72.6, 67.2, 61.6, 55.8, 50.0, 43.4, 37.5, 31.8, 26.3, 21.1, 16.6, 12.7, 9.5, 6.9, 5.0, 3.6, 2.6, 2.0, 1.7, 1.5, 1.4, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "9E_A15", "group": "9E", "cone": "A15", "label": "9E \u00b7 A15", "values": [79.1, 80.2, 81.5, 82.8, 84.1, 85.4, 86.5, 87.6, 88.7, 89.9, 91.2, 92.4, 93.5, 94.7, 95.7, 96.8, 97.8, 98.7, 99.3, 99.7, 99.9, 99.8, 99.3, 98.4, 97.1, 95.3, 92.8, 89.9, 86.6, 82.9, 78.3, 73.5, 68.3, 62.7, 57.0, 51.2, 44.9, 38.9, 32.9, 27.3, 22.1, 17.4, 13.4, 10.1, 7.4, 5.4, 3.9, 2.7, 2.1, 1.8, 1.5, 1.4, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "9E_A20", "group": "9E", "cone": "A20", "label": "9E \u00b7 A20", "values": [80.1, 81.2, 82.4, 83.7, 84.9, 86.0, 87.1, 88.2, 89.3, 90.4, 91.5, 92.7, 93.7, 94.8, 95.9, 96.9, 97.8, 98.7, 99.5, 99.8, 99.9, 99.8, 99.3, 98.4, 97.0, 95.3, 93.0, 90.1, 86.9, 83.2, 78.6, 74.0, 68.9, 63.4, 57.6, 52.0, 45.6, 39.6, 33.8, 28.2, 22.9, 18.2, 14.0, 10.6, 7.9, 5.7, 4.0, 3.0, 2.2, 1.8, 1.5, 1.3, 1.2, 1.2, 1.3, 1.2, 1.2, 1.2, 1.3, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "12E_A6", "group": "12E", "cone": "A6", "label": "12E \u00b7 A6", "values": [85.0, 85.7, 86.7, 87.8, 88.8, 89.6, 90.2, 90.9, 91.5, 92.1, 92.7, 93.2, 93.6, 94.1, 94.6, 95.2, 95.7, 96.1, 96.7, 97.2, 97.6, 98.1, 98.5, 98.9, 99.2, 99.5, 99.8, 99.9, 100.0, 100.0, 99.8, 99.4, 98.9, 98.1, 97.4, 96.2, 94.8, 93.3, 91.4, 89.2, 87.1, 84.4, 81.3, 78.1, 74.9, 71.2, 67.3, 63.3, 59.0, 54.5, 49.9, 45.3, 40.7, 36.2, 31.7, 27.5, 23.4, 19.6, 16.2, 13.3, 10.6, 8.4, 6.7, 5.3, 4.2, 3.4, 2.9, 2.5, 2.3, 2.1, 2.1, 2.0, 1.9, 1.9, 2.0, 1.8, 1.9, 1.9, 1.9, 1.9, 1.9]}, {"id": "12E_A10", "group": "12E", "cone": "A10", "label": "12E \u00b7 A10", "values": [84.7, 85.6, 86.6, 87.6, 88.6, 89.2, 90.0, 90.5, 91.1, 91.8, 92.3, 92.8, 93.4, 93.8, 94.3, 94.9, 95.4, 95.7, 96.4, 96.9, 97.4, 97.8, 98.2, 98.7, 99.2, 99.5, 99.8, 100.0, 100.0, 100.0, 99.8, 99.6, 99.1, 98.5, 97.7, 96.6, 95.2, 93.6, 91.8, 89.6, 87.3, 84.4, 81.4, 78.0, 74.4, 70.7, 66.5, 62.2, 57.8, 53.3, 48.6, 43.8, 39.1, 34.5, 30.2, 26.2, 22.2, 18.4, 15.4, 12.6, 10.1, 8.0, 6.4, 5.0, 4.1, 3.4, 2.9, 2.6, 2.3, 2.3, 2.2, 2.2, 2.1, 2.1, 2.1, 2.0, 2.1, 2.0, 2.0, 2.0, 2.0]}, {"id": "12E_A15", "group": "12E", "cone": "A15", "label": "12E \u00b7 A15", "values": [84.3, 85.2, 86.2, 87.2, 88.1, 88.8, 89.6, 90.1, 90.7, 91.3, 91.9, 92.3, 93.0, 93.5, 94.0, 94.5, 94.9, 95.6, 96.0, 96.5, 97.1, 97.6, 98.0, 98.4, 98.8, 99.3, 99.5, 99.7, 100.0, 99.8, 99.6, 99.4, 99.0, 98.3, 97.5, 96.5, 95.2, 93.7, 91.8, 89.7, 87.3, 84.7, 81.7, 78.4, 74.9, 71.1, 67.3, 63.1, 58.7, 54.4, 49.9, 45.0, 40.3, 35.8, 31.4, 27.2, 23.2, 19.5, 16.2, 13.3, 10.8, 8.7, 7.0, 5.6, 4.5, 3.7, 3.2, 2.9, 2.6, 2.4, 2.4, 2.3, 2.3, 2.3, 2.2, 2.2, 2.2, 2.2, 2.2, 2.2, 2.2]}, {"id": "12E_A20", "group": "12E", "cone": "A20", "label": "12E \u00b7 A20", "values": [86.0, 86.8, 87.7, 88.7, 89.6, 90.4, 90.8, 91.5, 92.1, 92.6, 92.9, 93.4, 94.0, 94.4, 94.8, 95.3, 95.8, 96.2, 96.7, 97.2, 97.6, 97.9, 98.4, 98.8, 99.1, 99.4, 99.6, 99.9, 100.0, 99.9, 99.8, 99.5, 99.1, 98.5, 97.7, 96.6, 95.3, 93.9, 92.1, 90.0, 87.9, 85.2, 82.4, 79.2, 75.7, 72.0, 68.0, 63.8, 59.5, 55.1, 50.5, 45.9, 41.3, 36.7, 32.2, 27.9, 23.8, 20.0, 16.7, 13.7, 11.1, 8.9, 7.1, 5.7, 4.5, 3.8, 3.2, 2.8, 2.5, 2.3, 2.3, 2.2, 2.2, 2.2, 2.1, 2.1, 2.2, 2.1, 2.1, 2.2, 2.2]}]}, "sxrt": {"modality": "Superficial", "depths": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 7.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 50.0, 60.0, 70.0, 80.0], "series": [{"id": "F2_D2", "group": "F2", "cone": "D2", "label": "F2 \u00b7 D2", "values": [100.0, 93.0, 86.4, 80.6, 75.0, 69.9, 61.4, 50.9, 38.3, 29.1, 22.7, 17.9, 14.2, 11.5, 7.6, 5.0, 3.5, 2.5]}, {"id": "F2_D3", "group": "F2", "cone": "D3", "label": "F2 \u00b7 D3", "values": [100.0, 92.3, 85.5, 79.7, 74.4, 69.7, 61.7, 51.7, 39.3, 30.6, 24.0, 19.1, 15.5, 12.6, 8.4, 5.8, 4.0, 2.9]}, {"id": "F2_D4", "group": "F2", "cone": "D4", "label": "F2 \u00b7 D4", "values": [100.0, 92.4, 85.9, 80.1, 75.2, 70.6, 62.7, 52.9, 40.9, 32.1, 25.5, 20.6, 16.7, 13.6, 9.2, 6.5, 4.5, 3.3]}, {"id": "F2_D5", "group": "F2", "cone": "D5", "label": "F2 \u00b7 D5", "values": [100.0, 93.7, 87.8, 82.3, 77.3, 72.7, 64.5, 54.7, 42.6, 33.7, 26.9, 21.9, 17.8, 14.8, 10.1, 7.1, 5.2, 3.7]}, {"id": "F2_D10", "group": "F2", "cone": "D10", "label": "F2 \u00b7 D10", "values": [100.0, 93.3, 87.7, 82.6, 79.0, 74.7, 68.1, 59.4, 49.3, 40.6, 34.1, 29.0, 24.6, 21.0, 15.9, 12.3, 9.4, 7.2]}, {"id": "F3_D2", "group": "F3", "cone": "D2", "label": "F3 \u00b7 D2", "values": [100.0, 96.0, 91.8, 87.6, 83.5, 79.5, 72.1, 62.5, 50.0, 40.3, 32.7, 26.8, 22.2, 18.4, 13.1, 9.3, 6.8, 4.9]}, {"id": "F3_D3", "group": "F3", "cone": "D3", "label": "F3 \u00b7 D3", "values": [100.0, 95.4, 91.1, 87.1, 83.3, 79.6, 72.9, 63.8, 51.8, 42.2, 34.7, 28.9, 24.1, 20.2, 14.4, 10.5, 7.8, 5.7]}, {"id": "F3_D4", "group": "F3", "cone": "D4", "label": "F3 \u00b7 D4", "values": [100.0, 96.0, 92.0, 88.2, 84.3, 80.8, 74.2, 65.6, 53.7, 44.4, 36.9, 31.0, 26.1, 22.0, 15.9, 11.7, 8.7, 6.6]}, {"id": "F3_D5", "group": "F3", "cone": "D5", "label": "F3 \u00b7 D5", "values": [100.0, 96.0, 92.2, 88.4, 84.9, 81.3, 75.0, 66.6, 54.9, 45.7, 38.3, 32.4, 27.4, 23.4, 17.1, 12.7, 9.7, 7.3]}, {"id": "F3_D10", "group": "F3", "cone": "D10", "label": "F3 \u00b7 D10", "values": [100.0, 96.3, 93.1, 89.8, 87.1, 84.5, 79.2, 72.6, 63.4, 54.8, 48.2, 42.3, 37.6, 33.0, 26.4, 21.1, 16.5, 13.2]}, {"id": "F4_D2", "group": "F4", "cone": "D2", "label": "F4 \u00b7 D2", "values": [100.0, 97.8, 95.2, 92.5, 89.5, 86.6, 81.1, 73.5, 61.9, 52.1, 44.1, 37.4, 31.7, 27.0, 19.8, 14.7, 11.0, 8.2]}, {"id": "F4_D3", "group": "F4", "cone": "D3", "label": "F4 \u00b7 D3", "values": [100.0, 97.6, 95.1, 92.6, 90.0, 87.5, 82.4, 75.1, 64.2, 54.9, 46.9, 40.2, 34.4, 29.5, 21.8, 16.4, 12.4, 9.5]}, {"id": "F4_D4", "group": "F4", "cone": "D4", "label": "F4 \u00b7 D4", "values": [100.0, 98.2, 96.1, 93.9, 91.4, 89.0, 84.3, 77.4, 66.9, 57.6, 49.8, 42.9, 37.0, 32.0, 24.2, 18.3, 14.1, 10.7]}, {"id": "F4_D5", "group": "F4", "cone": "D5", "label": "F4 \u00b7 D5", "values": [100.0, 97.8, 95.6, 93.4, 91.2, 89.0, 84.5, 78.0, 68.0, 59.1, 51.4, 44.7, 38.8, 33.8, 25.8, 19.6, 15.2, 11.8]}, {"id": "F4_D10", "group": "F4", "cone": "D10", "label": "F4 \u00b7 D10", "values": [100.0, 98.3, 96.8, 95.5, 94.2, 92.3, 89.8, 84.7, 77.7, 70.0, 63.7, 57.9, 52.2, 47.1, 37.6, 30.6, 24.8, 20.4]}]}};
+const DATA = {"electrons": {"modality": "Electrons", "depths": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0, 31.0, 32.0, 33.0, 34.0, 35.0, 36.0, 37.0, 38.0, 39.0, 40.0, 41.0, 42.0, 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0], "series": [{"id": "6E_A10", "group": "6E", "cone": "A10", "label": "6E \u00b7 A10", "values": [79.6, 79.3, 79.8, 81.5, 83.5, 85.4, 87.5, 89.6, 91.7, 93.8, 95.7, 97.5, 98.8, 99.7, 100.0, 99.6, 98.0, 95.7, 92.4, 88.0, 82.9, 76.6, 69.6, 62.1, 53.8, 45.8, 37.3, 29.6, 22.5, 16.0, 11.0, 7.0, 4.3, 2.6, 1.6, 1.1, 0.9, 0.9, 0.9, 0.8, 0.9, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.7, 0.7, 0.8, null, null, null, null, null, null, null, null, null, null, null, null]}, {"id": "9E_A10", "group": "9E", "cone": "A10", "label": "9E \u00b7 A10", "values": [83.3, 83.1, 83.3, 84.4, 85.6, 86.7, 87.7, 88.8, 89.7, 90.6, 91.4, 92.4, 93.3, 94.4, 95.2, 96.2, 97.1, 98.0, 98.7, 99.4, 99.9, 100.0, 100.0, 99.7, 98.9, 97.7, 96.1, 94.0, 91.5, 88.4, 84.9, 80.7, 76.2, 71.2, 65.8, 60.0, 54.0, 47.9, 41.8, 35.7, 29.9, 24.5, 19.3, 15.0, 11.3, 8.2, 5.9, 4.2, 3.0, 2.3, 1.8, 1.6, 1.5, 1.4, 1.4, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, 1.3, null, null, null, null, null]}, {"id": "12E_A10", "group": "12E", "cone": "A10", "label": "12E \u00b7 A10", "values": [87.8, 87.6, 87.7, 88.7, 89.7, 90.5, 91.3, 91.8, 92.4, 92.9, 93.4, 93.8, 94.4, 94.8, 95.2, 95.7, 96.0, 96.4, 96.9, 97.2, 97.6, 98.0, 98.3, 98.7, 99.1, 99.4, 99.6, 99.8, 99.9, 100.0, 99.9, 99.7, 99.4, 99.0, 98.2, 97.5, 96.3, 95.0, 93.5, 91.7, 89.6, 87.3, 84.5, 81.7, 78.5, 74.9, 71.1, 67.2, 62.9, 58.7, 54.1, 49.5, 44.9, 40.1, 35.6, 31.0, 26.8, 22.8, 19.1, 15.7, 12.8, 10.2, 8.1, 6.4, 5.0, 4.1, 3.4, 2.9, 2.6, 2.4, 2.3]}, {"id": "16E_A10", "group": "16E", "cone": "A10", "label": "16E \u00b7 A10", "values": [92.9, 92.5, 92.6, 93.5, 94.4, 95.2, 95.7, 96.2, 96.7, 97.0, 97.4, 97.6, 97.8, 98.1, 98.3, 98.5, 98.6, 98.7, 98.9, 99.0, 99.3, 99.3, 99.4, 99.5, 99.6, 99.7, 99.8, 99.9, 99.9, 99.9, 99.9, 99.9, 100.0, 99.9, 99.8, 99.8, 99.6, 99.6, 99.4, 99.2, 98.9, 98.6, 98.2, 97.7, 97.2, 96.5, 95.9, 95.1, 94.4, 93.2, 92.1, 90.9, 89.5, 87.8, 86.3, 84.4, 82.5, 80.3, 78.0, 75.5, 72.9, 70.1, 67.2, 64.3, 61.1, 57.8, 54.5, 51.1, 47.7, 44.1, 40.7]}]}, "sxrt": {"modality": "Superficial", "depths": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 7.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 50.0, 60.0, 70.0, 80.0], "series": [{"id": "F2_D2", "group": "F2", "cone": "D2", "label": "F2 \u00b7 D2", "values": [100.0, 93.0, 86.4, 80.6, 75.0, 69.9, 61.4, 50.9, 38.3, 29.1, 22.7, 17.9, 14.2, 11.5, 7.6, 5.0, 3.5, 2.5]}, {"id": "F2_D3", "group": "F2", "cone": "D3", "label": "F2 \u00b7 D3", "values": [100.0, 92.3, 85.5, 79.7, 74.4, 69.7, 61.7, 51.7, 39.3, 30.6, 24.0, 19.1, 15.5, 12.6, 8.4, 5.8, 4.0, 2.9]}, {"id": "F2_D4", "group": "F2", "cone": "D4", "label": "F2 \u00b7 D4", "values": [100.0, 92.4, 85.9, 80.1, 75.2, 70.6, 62.7, 52.9, 40.9, 32.1, 25.5, 20.6, 16.7, 13.6, 9.2, 6.5, 4.5, 3.3]}, {"id": "F2_D5", "group": "F2", "cone": "D5", "label": "F2 \u00b7 D5", "values": [100.0, 93.7, 87.8, 82.3, 77.3, 72.7, 64.5, 54.7, 42.6, 33.7, 26.9, 21.9, 17.8, 14.8, 10.1, 7.1, 5.2, 3.7]}, {"id": "F2_D10", "group": "F2", "cone": "D10", "label": "F2 \u00b7 D10", "values": [100.0, 93.3, 87.7, 82.6, 79.0, 74.7, 68.1, 59.4, 49.3, 40.6, 34.1, 29.0, 24.6, 21.0, 15.9, 12.3, 9.4, 7.2]}, {"id": "F3_D2", "group": "F3", "cone": "D2", "label": "F3 \u00b7 D2", "values": [100.0, 96.0, 91.8, 87.6, 83.5, 79.5, 72.1, 62.5, 50.0, 40.3, 32.7, 26.8, 22.2, 18.4, 13.1, 9.3, 6.8, 4.9]}, {"id": "F3_D3", "group": "F3", "cone": "D3", "label": "F3 \u00b7 D3", "values": [100.0, 95.4, 91.1, 87.1, 83.3, 79.6, 72.9, 63.8, 51.8, 42.2, 34.7, 28.9, 24.1, 20.2, 14.4, 10.5, 7.8, 5.7]}, {"id": "F3_D4", "group": "F3", "cone": "D4", "label": "F3 \u00b7 D4", "values": [100.0, 96.0, 92.0, 88.2, 84.3, 80.8, 74.2, 65.6, 53.7, 44.4, 36.9, 31.0, 26.1, 22.0, 15.9, 11.7, 8.7, 6.6]}, {"id": "F3_D5", "group": "F3", "cone": "D5", "label": "F3 \u00b7 D5", "values": [100.0, 96.0, 92.2, 88.4, 84.9, 81.3, 75.0, 66.6, 54.9, 45.7, 38.3, 32.4, 27.4, 23.4, 17.1, 12.7, 9.7, 7.3]}, {"id": "F3_D10", "group": "F3", "cone": "D10", "label": "F3 \u00b7 D10", "values": [100.0, 96.3, 93.1, 89.8, 87.1, 84.5, 79.2, 72.6, 63.4, 54.8, 48.2, 42.3, 37.6, 33.0, 26.4, 21.1, 16.5, 13.2]}, {"id": "F4_D2", "group": "F4", "cone": "D2", "label": "F4 \u00b7 D2", "values": [100.0, 97.8, 95.2, 92.5, 89.5, 86.6, 81.1, 73.5, 61.9, 52.1, 44.1, 37.4, 31.7, 27.0, 19.8, 14.7, 11.0, 8.2]}, {"id": "F4_D3", "group": "F4", "cone": "D3", "label": "F4 \u00b7 D3", "values": [100.0, 97.6, 95.1, 92.6, 90.0, 87.5, 82.4, 75.1, 64.2, 54.9, 46.9, 40.2, 34.4, 29.5, 21.8, 16.4, 12.4, 9.5]}, {"id": "F4_D4", "group": "F4", "cone": "D4", "label": "F4 \u00b7 D4", "values": [100.0, 98.2, 96.1, 93.9, 91.4, 89.0, 84.3, 77.4, 66.9, 57.6, 49.8, 42.9, 37.0, 32.0, 24.2, 18.3, 14.1, 10.7]}, {"id": "F4_D5", "group": "F4", "cone": "D5", "label": "F4 \u00b7 D5", "values": [100.0, 97.8, 95.6, 93.4, 91.2, 89.0, 84.5, 78.0, 68.0, 59.1, 51.4, 44.7, 38.8, 33.8, 25.8, 19.6, 15.2, 11.8]}, {"id": "F4_D10", "group": "F4", "cone": "D10", "label": "F4 \u00b7 D10", "values": [100.0, 98.3, 96.8, 95.5, 94.2, 92.3, 89.8, 84.7, 77.7, 70.0, 63.7, 57.9, 52.2, 47.1, 37.6, 30.6, 24.8, 20.4]}]}};
 
 // stable categorical palette, assigned on activation for max distinctness
 const PALETTE = ["#1f5fbf","#e2562b","#2e9e5b","#d9a300","#8a4fd1","#c0398f",
@@ -294,6 +294,21 @@ const seriesKey = (mod, id) => mod + "::" + id;
 function coneLabel(c){ const n=c.replace(/^D/,""); return "\u2300"+n; } // ⌀
 function energySub(mod){ return mod==="sxrt" ? "energy / filter" : "energy"; }
 
+function makeChip(modKey, s, label){
+  const key = seriesKey(modKey, s.id);
+  const chip = document.createElement("button");
+  chip.className="chip"; chip.type="button";
+  chip.setAttribute("role","switch"); chip.setAttribute("aria-checked","false");
+  chip.innerHTML = '<span class="dot"></span>'+label;
+  chip.dataset.key = key;
+  chip.addEventListener("click", ()=> toggleSeries(modKey, s, chip));
+  if(state.active.has(key)){          // reflect existing selection on rebuild
+    chip.classList.add("on"); chip.setAttribute("aria-checked","true");
+    chip.querySelector(".dot").style.background = state.active.get(key).color;
+  }
+  return chip;
+}
+
 function buildGroup(modKey){
   const ds = DATA[modKey];
   const body = document.getElementById(modKey==="electrons" ? "elecBody" : "sxrtBody");
@@ -306,29 +321,43 @@ function buildGroup(modKey){
     }
     return;
   }
-  if(modKey==="electrons") document.getElementById("elecSub").textContent =
-    " — " + ds.series.length + " curves";
 
-  // group series by their 'group' (F2/F3 or energy)
+  if(modKey==="electrons"){
+    const cones = Array.from(new Set(ds.series.map(s=>s.cone)));
+    if(cones.length===1){
+      // single applicator: show it in the title, list energies as one row of chips
+      document.getElementById("elecSub").textContent = " — " + cones[0];
+      const chips = document.createElement("div"); chips.className="chips";
+      ds.series.forEach(s=> chips.appendChild(makeChip(modKey, s, s.group)));
+      body.appendChild(chips);
+    } else {
+      // multiple applicators: group by cone, energies as chips within each
+      document.getElementById("elecSub").textContent = " — " + ds.series.length + " curves";
+      const byCone = {};
+      ds.series.forEach(s=>{ (byCone[s.cone]=byCone[s.cone]||[]).push(s); });
+      Object.keys(byCone).forEach(c=>{
+        const sg=document.createElement("div"); sg.className="subgroup";
+        sg.innerHTML='<div class="subgroup-h"><span class="sgn">'+c+
+          '</span><span class="sgl">applicator</span></div>';
+        const chips=document.createElement("div"); chips.className="chips";
+        byCone[c].forEach(s=> chips.appendChild(makeChip(modKey, s, s.group)));
+        sg.appendChild(chips); body.appendChild(sg);
+      });
+    }
+    return;
+  }
+
+  // SXRT (and other modalities): group by energy/filter, chips by cone size
   const groups = {};
   ds.series.forEach(s=>{ (groups[s.group] = groups[s.group]||[]).push(s); });
-
   Object.keys(groups).forEach(g=>{
     const sg = document.createElement("div"); sg.className="subgroup";
     sg.innerHTML = '<div class="subgroup-h"><span class="sgn">'+g+
       '</span><span class="sgl">'+energySub(modKey)+'</span></div>';
     const chips = document.createElement("div"); chips.className="chips";
     groups[g].forEach(s=>{
-      const key = seriesKey(modKey, s.id);
-      const chip = document.createElement("button");
-      chip.className="chip"; chip.type="button";
-      chip.setAttribute("role","switch"); chip.setAttribute("aria-checked","false");
       const isCone = /^D\d/.test(s.cone);
-      const lbl = isCone ? coneLabel(s.cone) : s.cone;
-      chip.innerHTML = '<span class="dot"></span>'+lbl;
-      chip.dataset.key = key;
-      chip.addEventListener("click", ()=> toggleSeries(modKey, s, chip));
-      chips.appendChild(chip);
+      chips.appendChild(makeChip(modKey, s, isCone ? coneLabel(s.cone) : s.cone));
     });
     sg.appendChild(chips);
     body.appendChild(sg);
@@ -662,6 +691,15 @@ window.addEventListener("orientationchange", ()=>setTimeout(()=>resize(true),250
 resize(true);
 requestAnimationFrame(()=>resize(true));   // second pass once layout/safe-areas settle
 window.addEventListener("load", ()=>resize(true));
+
+// Offline support (only registers over https / installed app; harmless elsewhere)
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js').catch(function(){});
+}
+// Ask Chrome to keep the offline cache durable (usually granted once installed)
+if(navigator.storage && navigator.storage.persist){
+  navigator.storage.persist().catch(function(){});
+}
 </script>
 </body>
 </html>
